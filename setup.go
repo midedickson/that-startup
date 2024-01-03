@@ -24,4 +24,7 @@ func setUp() {
 		log.Fatal("Error loading .env file")
 	}
 	createHttpClientFromOAuth()
+	connectDB()
+	createQuoteTableIfNotExists()
+	insertQuotesFromCSV("quotes.csv")
 }
