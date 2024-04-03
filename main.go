@@ -11,5 +11,5 @@ func main() {
 	fmt.Println("Bot is up! 🚀")
 	setUp()
 	defer db.Close()
-	// createTweet()
+	createTweet()
 }

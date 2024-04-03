@@ -9,7 +9,7 @@ import (
 )
 
 func createTweet() {
-	newTweet := Tweet{Text: "@victorobabatund Here's me tagging you with automated tweets to show progress on our bot 😌"}
+	newTweet := Tweet{Text: "@victorobabatund We're almost ready! 😌"}
 	newTweetJson, err := json.Marshal(newTweet)
 	if err != nil {
 		log.Fatal("Error making new tweet.")
